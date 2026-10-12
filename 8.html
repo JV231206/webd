@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Image Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #0b1120;
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 36px;
+      max-width: 600px;
+    }
+
+    .header-title {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    .header-subtitle {
+      font-size: 0.95rem;
+      color: #94a3b8;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      width: 100%;
+      max-width: 1100px;
+    }
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+    .card {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      overflow: hidden;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.45);
+      background-color: #1e293b;
+      cursor: pointer;
+    }
+    .card img {
+      grid-area: 1 / 1;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.45s ease-out;
+    }
+    .overlay {
+      grid-area: 1 / 1;
+      align-self: end;
+      width: 100%;
+      background: linear-gradient(
+        to top,
+        rgba(11, 17, 32, 0.92) 0%,
+        rgba(11, 17, 32, 0.7) 65%,
+        transparent 100%
+      );
+      padding: 32px 18px 18px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .overlay-number {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #38bdf8;
+      line-height: 1.1;
+      margin-bottom: 4px;
+      letter-spacing: 0.05em;
+    }
+    .overlay-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    .card:hover img {
+      transform: scale(1.06);
+    }
+
+    .card:hover .overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="header">
+    <div class="header-title">Photo Showcase</div>
+    <div class="header-subtitle">Pure CSS Grid Gallery with Bottom Overlay & Clean Image View</div>
+  </div>
+
+  <div class="gallery">
+   
+    <div class="card">
+      <img src="https://picsum.photos/id/1015/600/400" alt="River Valley">
+      <div class="overlay">
+        <div class="overlay-number">01</div>
+        <div class="overlay-title">River Valley</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/id/1018/600/400" alt="Misty Peaks">
+      <div class="overlay">
+        <div class="overlay-number">02</div>
+        <div class="overlay-title">Misty Peaks</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/id/1025/600/400" alt="Forest Trail">
+      <div class="overlay">
+        <div class="overlay-number">03</div>
+        <div class="overlay-title">Forest Trail</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/id/1036/600/400" alt="Alpine Lake">
+      <div class="overlay">
+        <div class="overlay-number">04</div>
+        <div class="overlay-title">Alpine Lake</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/id/1039/600/400" alt="Coastal Horizon">
+      <div class="overlay">
+        <div class="overlay-number">05</div>
+        <div class="overlay-title">Coastal Horizon</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/id/1043/600/400" alt="Canyon Sunset">
+      <div class="overlay">
+        <div class="overlay-number">06</div>
+        <div class="overlay-title">Canyon Sunset</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

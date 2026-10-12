@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        #parent{
+            height: 900vh;
+            border: 2px solid;
+            display: grid;
+            grid-template-columns:300px 300px 300px ;
+            grid-template-rows:400px 300px 300px ;
+            gap: 10px;
+        }
+         .box{ 
+            transition: 2s;
+        }
+        .box:hover{
+            transform:scale(translateX(10.25s));
+        }
+        img{
+        
+            height: 100%;
+            width: 100%;
+            border-radius: 11%;
+           
+        }
+        #one{
+          grid-column: 1/3;
+          object-fit: cover;
+          overflow: hidden;
+        }
+        .p{
+            background-color: white;
+        }
+        h2{
+            color: aliceblue;
+            opacity: 0;
+            transition: 3s;
+        }
+    h2:hover{
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div style="color: white;">
+            <p>MY COLLECTION</p>
+            <h1>Moments</h1>
+            <p>Acollection of places,people and memories</p>
+        </div>
+        </nav>
+
+    <div id="parent">
+    <div id="one" class="box">
+        <img src="https://images.unsplash.com/photo-1791313779146-f1b991068700?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <h2>mountains</h2>
+    </div>
+     <div id="two" class="box">
+        <img src="https://images.unsplash.com/photo-1791352616735-8f3d5c0aefdd?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <h3>right</h3>
+    </div>
+     <div id="three" class="box">
+     <img src="https://plus.unsplash.com/premium_photo-1790376728632-cb5a4b08f437?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+     <h4></h4>
+    </div>
+     <div id="four" class="box">
+        <img src="https://images.unsplash.com/photo-1791015759553-227f22b16087?q=80&w=2666&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rivervalley">
+     </div>
+     <div id="five" class="box">
+        <img src="https://images.unsplash.com/photo-1788156416944-97edf0a9d140?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt="">
+     </div>
+     <div id="six" class="box">
+        <img src="https://images.unsplash.com/photo-1790671083750-9fe6fac0db44?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+     </div>
+     <div id="seven" class="box">
+        <img src="https://images.unsplash.com/photo-1791187610768-a9f246a09432?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzM3x8fGVufDB8fHx8fA%3D%3D" alt="">
+     </div>
+    </div>
+</body>
+</html>

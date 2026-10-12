@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: black;
+            color:white;
+            position: sticky;
+        }
+        h1{
+            display: inline-block;
+        }
+        a{
+            text-decoration: none;
+        }
+        #main{
+            height: 400px;
+            width: 300px;
+            position: relative;
+            margin: 10px auto;
+        }
+            #one{
+                height: 50%;
+                width: 100%;
+                background-color: white;
+                position: absolute;
+                img{
+                height: 100%;
+                width: 100%;
+                 position: absolute;
+                 border-radius: 5%;
+                }
+            }
+            #two{
+                height: 50%;
+                width: 100%;
+                background-color: white;
+                position:absolute;
+                top: 200px;
+            }
+            #vd{
+                color: white;
+                background-color: purple;
+            }
+            #cu{
+                color: white;
+                background-color: green;
+                border-radius: 40%;
+                right: 10px;
+                bottom: 20px;
+                position: fixed;
+            }
+            #fs{
+                position: absolute;
+               color: white;
+                background-color: red;
+                top: 5px;
+                left: 5px;
+            }
+            #p{
+                position: absolute;
+                color: white;
+                background-color: black;
+                top: 180px;
+                left: 5px;
+            }
+            #h{
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                border-radius: 50%;
+                background-color: white;
+            }
+
+
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>🏠Dream House</h1>
+        <a href="" >Home</a>
+        <a href="">Properties</a>
+        <a href="">About</a>
+    </nav>
+    <div id="main">
+        <div id="one">
+            <img src="https://i.pinimg.com/1200x/65/85/d7/6585d73b7de715ae9b44f09ef79312c8.jpg" >
+            <button id="fs">For Sale</button>
+            <button id="p">₹50 Lakhs</button>
+            <button id="h">❤️</button>
+        </div>
+        <div id="two">
+            <h2>Beautiful 2bhk House</h2>
+            <p>📍Pune, Maharastra</p>
+            <p>🛌 2 Bedroom</p>
+            <p>1200sq.ft.</p>
+
+            <button id="vd">View Details</button>
+        </div>
+        <button id="cu">Contact us</button>
+    </div>
+
+</body>
+</html> 

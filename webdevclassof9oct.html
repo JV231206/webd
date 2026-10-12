@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #parent{
+            height: 1200px;
+            border: 2px solid white;
+            display: grid;
+            grid-template-columns:300px 300px 300px ;
+            grid-template-rows:400px 300px 300px ;
+            gap: 20px;
+        }
+        #o{
+            border-radius: 11%;
+            background: linear-gradient(red,blue);
+        }
+        #n{
+            border-radius: 11%;
+            background: linear-gradient(to right,red,blue);
+        }
+        #e{
+            border-radius: 11%;
+            background: linear-gradient(
+                to right,
+                red,
+                yellow,
+                green,
+                blue,
+                grey
+                );
+        }
+        #t{
+            border-radius: 11%;
+            background: linear-gradient(
+                to right,
+                red 0%,
+                yellow 50%,
+                blue 100%
+            );
+        }
+        #w{
+            border-radius: 11%;
+            background: linear-gradient(
+                to right,
+                red 50%,
+                blue 50%
+            );
+        }
+        #j{
+            border-radius: 11%;
+            background: linear-gradient(
+                to bottom right,
+                red,
+                blue
+            );
+        }
+        #k{
+            border-radius: 11%;
+            background: radial-gradient(
+                circle,
+                red,
+                blue
+            );
+        }
+        #l{
+            background: radial-gradient(
+                circle at top,
+                red,
+                blue
+            );
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <center>
+    <h1 style="color: aliceblue;">CSS Gradients</h1></center>
+    <div id="parent">
+        <div id="o" class="one"></div>
+        <div id="n" class="one"></div>
+        <div id="e" class="one"></div>
+        <div id="t" class="one"></div>
+        <div id="w" class="one"></div>
+        <div id="j" class="one"></div>
+        <div id="k" class="one"></div>
+        <div id="l" class="one"></div>
+        <div id="m" class="one"></div>
+    </div>
+</body>
+</html>
