@@ -1,0 +1,175 @@
+<html>
+<head>
+    <title>My Form</title>
+</head>
+<body>
+<centre>
+    <legend>School Championship Registration Form </legend>
+    <br>
+    <br>
+    <label></label>Student Name:</label>
+    <input type="text" required placeholder="Enter your name">
+    <br>
+    <br>
+    <label>Parent's Name:</label>
+    <input type="text" required placeholder="Enter your parent's name">
+    <br>
+    <br>
+    <label>Parent's Phone Number:</label>
+    <input type="text" required placeholder="Enter your parent's phone number">
+    <br>
+    <br>
+    <label>Parent email:</label>
+    <input type="email" required placeholder="Enter your parent's email">
+    <br>
+    <br>
+    <label>Preferred Sport:</label>
+    <input type="text" required placeholder="Enter your preferred sport">
+    <br>
+    <br>
+    <label>Verification </label>
+     <label for="terms">Accept Terms and Conditions:</label>
+    <input id="terms" type="checkbox">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+    
+    ```html
+<style>
+    /* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Page Background */
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #141e30, #243b55);
+        padding: 20px;
+    }
+
+    /* Form Container */
+    form {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    /* Fieldset */
+    fieldset {
+        border: none;
+        border-radius: 20px;
+        padding: 35px 40px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    /* Form Title */
+    legend {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 10px;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* Labels */
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    /* Input Fields */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 100%;
+        padding: 13px 15px;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        outline: none;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+    /* Input Focus */
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+    }
+
+    /* Placeholder */
+    input::placeholder {
+        color: #999;
+    }
+
+    /* Terms Section */
+    #terms {
+        width: 17px;
+        height: 17px;
+        accent-color: #667eea;
+        cursor: pointer;
+        vertical-align: middle;
+        margin-left: 8px;
+    }
+
+    /* Submit Button */
+    input[type="submit"] {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    /* Button Hover */
+    input[type="submit"]:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    /* Button Click */
+    input[type="submit"]:active {
+        transform: scale(0.98);
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+
+        fieldset {
+            padding: 30px 20px;
+        }
+
+        legend {
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            font-size: 14px;
+        }
+    }
+</style>
+    </centre>
+</body>
+</html>
